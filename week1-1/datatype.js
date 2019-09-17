@@ -118,10 +118,10 @@ function oneThing() {
     alert("something went wrong!");
   }
 }
-
+//creating variables
 var cake = false;
 var cup = false;
-
+//compiling and comparing variables
 function falseNews() {
   if (cake === false && cup === false) {
     alert("cake and cup are both false");
