@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="../week1/gp.js"></script>
+    <link rel="stylesheet" href="../week1/test/gp.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      This is an example of a boolean. Type <b>4 > 3;</b> in the text box next
+      to the boo button, then click on "boo!"
+    </p>
+    <form id="form" onsubmit="return false;">
+      <p id="boo">let isGreater =</p>
+      <input type="text" id="userInput" />
+      <input type="submit" value="boo!" onclick="othername();" />
+    </form>
+    <p>
+      Alright, lets try a null. Type <b>null</b> next to the "nothing" button.
+      Click it upon completion
+    </p>
+    <form id="nullform" onsubmit="return false;">
+      <p id="nu">let itsNothing =</p>
+      <input type="text" id="nullInput" />
+      <input type="submit" value="nothing" onclick="nullIt();" />
+    </form>
+    <p>
+      undefined is like null. There's something there but we haven't really
+      given it a value yet. Type <b>undefined</b> next to the "empty" button.
+      Click it upon completion
+    </p>
+    <form id="undefinedform" onsubmit="return false;">
+      <p id="emp">let empty =</p>
+      <input type="text" id="undefinedInput" />
+      <input type="submit" value="empty" onclick="undefineIt();" />
+    </form>
+
+    <p>
+      Numbers are exactly that. It gives the let or variable a number value!
+      Type <b>123</b> next to the "that would be old" button. Click it upon
+      completion
+    </p>
+    <form id="ageform" onsubmit="return false;">
+      <p id="ancient">let age =</p>
+      <input type="text" id="ageInput" />
+      <input type="submit" value="That would be old" onclick="ageIt();" />
+    </form>
+
+    <p>
+      Nan's can be a little tricky. It's the computers way of saying there's
+      something wrong with our math. Type <b>i'm not real</b> next to the
+      "WHAT?!" button. Click it upon completion
+    </p>
+    <form id="nanform" onsubmit="return false;">
+      <p id="idisagree">let fakeMath =</p>
+      <input type="text" id="nanInput" /> + 37 is equal to
+      <input type="submit" value="WHAT?!" onclick="nanIt();" />
+    </form>
+    <p>
+      We're almost done! Strings are like number values but in text form. Type
+      <b>'jack'</b> next to the "name it" button. Click it upon completion and
+      remember, you have to put jack in single quotation marks. There's other
+      ways of doing this but we'll cover that later!
+    </p>
+    <form id="stringform" onsubmit="return false;">
+      <p id="whatsmyname">let name =</p>
+      <input type="text" id="nameInput" />
+      <input type="submit" value="name it" onclick="nameIt();" />
+    </form>
+  </body>
+</html>
