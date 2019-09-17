@@ -1,3 +1,22 @@
+//get date
+function firstFunction() {
+  var tizzle = new Date();
+
+  document.getElementById("para").innerHTML = tizzle;
+}
+//turn string to number
+let num = 15;
+function secondFunction() {
+  var n = num.toString();
+  document.getElementById("graph").innerHTML = n;
+}
+//turn number to string
+let jack = "16";
+var pointJack = parseInt(jack);
+function tokyo() {
+  document.getElementById("par").innerHTML = pointJack;
+}
+
 function othername() {
   var input = document.getElementById("userInput").value;
   if (input == "4 > 3;") {
@@ -61,10 +80,52 @@ function nanIt() {
 function nameIt() {
   var inname = document.getElementById("nameInput").value;
   if (inname == "'jack'") {
-    alert("Great job! name is now valued as jack!");
+    alert(
+      "Great job! name is now valued as jack! Feel free to play with a couple other things below!"
+    );
   } else {
     alert(
       "Don't feel bad. Keep trying! type 'jack' in the box next to the name it button. Remember, everything is case sensitive and punctuation matters. In this case it's okay to be PUNctual!!!"
     );
+  }
+}
+
+function addIt() {
+  var inadd = document.getElementById("addInputOne").value;
+  var inadd2 = document.getElementById("addInputTwo").value;
+  var total = +inadd + +inadd2;
+  alert(total);
+}
+
+var john = true;
+var jake = true;
+
+function comparetwo() {
+  if (john && jake === true) {
+    alert("both john and jake are true");
+  } else {
+    alert("oops, something went terribly wrong!");
+  }
+}
+
+var susan = true;
+var sarah = false;
+
+function oneThing() {
+  if (susan === true && sarah === false) {
+    alert("susan is true but sarah is false");
+  } else {
+    alert("something went wrong!");
+  }
+}
+
+var cake = false;
+var cup = false;
+
+function falseNews() {
+  if (cake === false && cup === false) {
+    alert("cake and cup are both false");
+  } else {
+    alert("something went wrong");
   }
 }

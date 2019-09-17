@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../aca_javascript_211/week1-1/datatypes.css" />
+    <script src="../week1-1/datatype.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ba">
+      <p id="para"></p>
+      <p id="graph"></p>
+      <p id="par"></p>
+      <input
+        type="button"
+        id="butt"
+        onclick="firstFunction()"
+        value="display current date and time"
+      />
+      <input
+        type="button"
+        value="number to string"
+        onclick="secondFunction()"
+      />
+
+      <input type="button" value="string to number" onclick="tokyo()" />
+    </div>
+
+    <div class="div2">
+      <p>
+        This is an example of a boolean. Type <b>4 > 3;</b> in the text box next
+        to the boo button, then click on "boo!"
+      </p>
+      <form id="form" onsubmit="return false;">
+        <p id="boo">let isGreater =</p>
+        <input type="text" id="userInput" />
+        <input type="submit" value="boo!" onclick="othername();" />
+      </form>
+      <p>
+        Alright, lets try a null. Type <b>null</b> next to the "nothing" button.
+        Click it upon completion
+      </p>
+      <form id="nullform" onsubmit="return false;">
+        <p id="nu">let itsNothing =</p>
+        <input type="text" id="nullInput" />
+        <input type="submit" value="nothing" onclick="nullIt();" />
+      </form>
+      <p>
+        undefined is like null. There's something there but we haven't really
+        given it a value yet. Type <b>undefined</b> next to the "empty" button.
+        Click it upon completion
+      </p>
+      <form id="undefinedform" onsubmit="return false;">
+        <p id="emp">let empty =</p>
+        <input type="text" id="undefinedInput" />
+        <input type="submit" value="empty" onclick="undefineIt();" />
+      </form>
+
+      <p>
+        Numbers are exactly that. It gives the let or variable a number value!
+        Type <b>123</b> next to the "that would be old" button. Click it upon
+        completion
+      </p>
+      <form id="ageform" onsubmit="return false;">
+        <p id="ancient">let age =</p>
+        <input type="text" id="ageInput" />
+        <input type="submit" value="That would be old" onclick="ageIt();" />
+      </form>
+
+      <p>
+        Nan's can be a little tricky. It's the computers way of saying there's
+        something wrong with our math. Type <b>i'm not real</b> next to the
+        "WHAT?!" button. Click it upon completion
+      </p>
+      <form id="nanform" onsubmit="return false;">
+        <p id="idisagree">let fakeMath =</p>
+        <input type="text" id="nanInput" /> + 37 is equal to
+        <input type="submit" value="WHAT?!" onclick="nanIt();" />
+      </form>
+      <p>
+        We're almost done! Strings are like number values but in text form. Type
+        <b>'jack'</b> next to the "name it" button. Click it upon completion and
+        remember, you have to put jack in single quotation marks. There's other
+        ways of doing this but we'll cover that later!
+      </p>
+      <form id="stringform" onsubmit="return false;">
+        <p id="whatsmyname">let name =</p>
+        <input type="text" id="nameInput" />
+        <input type="submit" value="name it" onclick="nameIt();" />
+      </form>
+      <p>
+        Adding two numbers together
+      </p>
+      <form id="addingform" onsubmit="return false;">
+        <input type="number" id="addInputOne" /> +
+        <input type="number" id="addInputTwo" />
+        <input type="submit" value="=" onclick="addIt();" />
+      </form>
+
+      <p>run when two things are true</p>
+      <input type="button" value="boolean two" onclick="comparetwo()" />
+
+      <p>run when one thing is true</p>
+      <input type="button" value="one thing is true" onclick="oneThing()" />
+
+      <p>run when both things are false</p>
+      <input type="button" value="both are false" onclick="falseNews()" />
+    </div>
+  </body>
+</html>
